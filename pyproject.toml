@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "exchanges"
+version = "0.1.0"
+description = "Microservice for centrelized exchanges"
+authors = ["usr-9b"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+faust-streaming = "^0.11.1"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.32"}
+uvicorn = "^0.30.3"
+asyncpg = "^0.29.0"
+pydantic = "^2.8.2"
+pydantic-settings = "^2.3.4"
+fastapi = "^0.111.1"
+alembic = "^1.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

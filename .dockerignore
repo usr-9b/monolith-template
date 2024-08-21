@@ -1,0 +1,49 @@
+# Игнорировать файлы и папки, которые не нужны в контейнере
+
+# Исключить файлы конфигурации виртуальных окружений
+.env
+.env.example
+.venv
+venv/
+env/
+
+# Исключить IDE/редактор конфигурационные файлы
+*.swp
+*.swo
+.vscode/
+.idea/
+*.iml
+
+# Исключить файлы журналов и временные файлы
+*.log
+*.tmp
+*.bak
+*.pid
+
+# Исключить кеши Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Исключить тестовые файлы и папки
+tests/
+*.coverage
+.coverage
+
+# Исключить зависимости, если они устанавливаются через Docker
+poetry.lock
+pyproject.toml
+
+# Исключить файлы git
+.git/
+.gitignore
+.dockerignore
+
+# Исключить Dockerfile, если он не нужен в конечном образе
+Dockerfile
+docker-compose.yml
+
+# Исключить документацию
+README.md
+*.md
+docs/
